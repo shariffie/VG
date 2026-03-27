@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #1fa75a;
+  --color-secondary: #213372;
+  --color-third: #4bb9b9;
+  --color-content: #434343;
+  --color-nav-bg: #f2f2f2;
+  --color-light-bg: #f6f5f3;
+  
+  --color-sidebar: #213372;
+  --color-sidebar-foreground: #ffffff;
+  --color-sidebar-accent: #1fa75a;
+}
+
+/* Custom scrollbar for search dropdown */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+/* Leaflet theme adjustments */
+.leaflet-container {
+  background: #f6f5f3 !important;
+  width: 100%;
+  height: 100%;
+}
+
+/* Keep tiles normal for light theme */
+.leaflet-tile {
+  filter: none;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: white !important;
+  color: #434343 !important;
+  border: 1px solid #e5e7eb;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  background: white !important;
+  color: #213372 !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.leaflet-control-zoom-in:hover, .leaflet-control-zoom-out:hover {
+  background: #f2f2f2 !important;
+  color: #1fa75a !important;
+}
+
+.leaflet-tooltip {
+  background: white !important;
+  color: #434343 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  padding: 4px 8px !important;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: #e5e7eb !important;
+}

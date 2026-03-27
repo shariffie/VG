@@ -1,0 +1,31 @@
+51:  return L.divIcon({
+70:  return null;
+93:  return (
+651:      if (node.id === id) return node;
+654:        if (found) return found;
+657:    return null;
+707:    return selectedSite || MOCK_SITES.find(s => s.customer === selectedCustomer) || MOCK_SITES[0];
+738:    return Array.from({ length }, (_, i) => ({
+755:    return Array.from({ length }, (_, i) => ({
+772:    return Array.from({ length }, (_, i) => ({
+789:    return Array.from({ length }, (_, i) => ({
+809:      return Array.from({ length: 24 }, (_, i) => ({
+815:      return Array.from({ length: 12 }, (_, i) => ({
+821:      return Array.from({ length: 7 }, (_, i) => ({
+866:    return ['World', ...new Set(MOCK_SITES.filter(s => s.customer === selectedCustomer).map(site => site.country))];
+870:    return MOCK_SITES.filter(site => {
+876:      return matchesCustomer && matchesSearch && matchesStatus && matchesType && matchesCountry;
+878:      if (!sortConfig) return 0;
+880:      if (a[key]! < b[key]!) return direction === 'asc' ? -1 : 1;
+881:      if (a[key]! > b[key]!) return direction === 'asc' ? 1 : -1;
+882:      return 0;
+887:    return MOCK_SITES.filter(site => 
+902:    return sitesToAggregate.reduce((acc, site) => {
+913:      return acc;
+931:        return { key, direction: prev.direction === 'asc' ? 'desc' : 'asc' };
+933:      return { key, direction: 'desc' };
+937:  return (
+1672:                              return { ...site, rankValue: value, rankUnit: unit, rankLabel: label };
+3732:                        return nodes.map(node => {
+3737:                          return (
+3778:                      return renderTree(spacesTree);
